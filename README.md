@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Евгения](https://up.htmlacademy.ru/adaptive/31/user/1172931).
-* Наставник: `Неизвестно`.
+* Студент: [Евгения Сабирова](https://up.htmlacademy.ru/adaptive/31/user/1172931)
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761)
 
 ---
 
