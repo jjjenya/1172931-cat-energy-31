@@ -1,3 +1,8 @@
-.form {
-
+.form__field::placeholder {
+  font-family: $primary-font--second;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color--third;
+  text-transform: uppercase;
 }

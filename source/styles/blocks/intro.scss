@@ -1,3 +1,19 @@
 .intro {
+  background-color: $background--dark;
+}
 
+.intro__title {
+  font-family: $primary-font--second;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $second-color--text;
+}
+
+.intro__text {
+  font-family: $primary-font--second;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $second-color--text;
 }

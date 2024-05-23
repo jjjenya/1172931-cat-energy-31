@@ -1,7 +1,8 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/list-all.scss";
 @import "./common/button.scss";
@@ -34,5 +35,3 @@
 @import "./blocks/socials.scss";
 @import "./blocks/stats.scss";
 @import "./blocks/work.scss";
-
-

@@ -1,3 +1,25 @@
-.content-item {
+.content-item__title {
+  font-family: $primary-font--second;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $base-color--text;
+  text-transform: uppercase;
+}
 
+.content-item__text {
+  // font-family: $primary-font--basic;
+  font-size: 14px;
+  line-height: 18px;
+  // font-weight: 400;
+  color: $text-color--second;
+}
+
+.content-item__link {
+  font-family: $primary-font--second;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $base-color--text;
+  text-transform: uppercase;
 }
