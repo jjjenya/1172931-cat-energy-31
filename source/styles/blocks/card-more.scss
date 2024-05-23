@@ -1,0 +1,26 @@
+.card-more__title {
+  font-family: $primary-font--second;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color--first;
+  text-transform: uppercase;
+}
+
+.card-more__text {
+  // font-family: $primary-font--basic;
+  font-size: 12px;
+  line-height: 16px;
+  // font-weight: 400;
+  color: $text-color--third;
+}
+
+.card-more__button {
+  background-color: $button-color--bg-second;
+  font-family: $primary-font--second;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color--third;
+  text-transform: uppercase;
+}

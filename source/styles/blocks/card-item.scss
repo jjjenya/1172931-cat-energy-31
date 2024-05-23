@@ -1,0 +1,16 @@
+.card-item__title {
+  font-family: $primary-font--second;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color--second;
+  text-transform: uppercase;
+}
+
+.card-item__item {
+  // font-family: $primary-font--basic;
+  font-size: 12px;
+  line-height: 16px;
+  // font-weight: 400;
+  color: $text-color--third;
+}

@@ -1,0 +1,17 @@
+.sideline-item__category {
+  font-family: $primary-font--second;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $text-color--third;
+  text-transform: uppercase;
+}
+
+.sideline-item__number,
+.sideline-item__price {
+  // font-family: $primary-font--basic;
+  font-size: 14px;
+  line-height: 14px;
+  // font-weight: 400;
+  color: $text-color--third;
+}
