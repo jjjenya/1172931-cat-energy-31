@@ -1,3 +1,30 @@
-.main-footer {
-  // empty
+.main-footer__dev-name {
+  color: $text-color--third;
+}
+
+.main-footer__dev-logo {
+  fill: $color-icons;
+}
+
+.main-footer__dev[href]:hover .main-footer__dev-logo {
+  opacity: 1;
+  fill: $color-icons--hover-focus-active;
+}
+
+.main-footer__dev[href]:focus .main-footer__dev-logo {
+  opacity: 1;
+  fill: $color-icons--hover-focus-active;
+}
+
+.main-footer__dev[href]:active {
+  opacity: 0.3;
+}
+
+.main-footer__logo-name-link:hover,
+.main-footer__logo-name-link:focus {
+  opacity: 0.7;
+}
+
+.main-footer__logo-name-link:active {
+  opacity: 0.6;
 }

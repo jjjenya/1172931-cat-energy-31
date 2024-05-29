@@ -6,3 +6,32 @@
   color: $text-color--first;
   text-transform: uppercase;
 }
+
+.contacts__map-wrapper {
+  height: 362px;
+  background-image:
+    image-set(
+      url("../../images/map--mobile@1x.png") type("image/png") 1x,
+      url("../../images/map--mobile@2x.png") type("image/png") 2x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image:
+      image-set(
+        url("../../images/map--tablet@1x.png") type("image/png") 1x,
+        url("../../images/map--tablet@2x.png") type("image/png") 2x
+      );
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      image-set(
+        url("../../images/map--desktop@1x.png") type("image/png") 1x,
+        url("../../images/map--desktop@2x.png") type("image/png") 2x
+      );
+  }
+}

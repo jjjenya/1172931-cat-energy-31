@@ -1,7 +1,32 @@
 .work__list {
-  // font-family: $primary-font--basic;
   font-size: 14px;
   line-height: 18px;
-  // font-weight: 400;
   color: $text-color--second;
+}
+
+.work__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $button-color--bg-basic;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 30px 32px;
+}
+
+.work__item--leaf::before {
+  background-image: url("../../icons/stack.svg#work--leaf");
+}
+
+.work__item--water::before {
+  background-image: url("../../icons/stack.svg#work--water");
+}
+
+.work__item--eat::before {
+  background-image: url("../../icons/stack.svg#work--eat");
+}
+
+.work__item--time::before {
+  background-image: url("../../icons/stack.svg#work--time");
 }
