@@ -1,7 +1,8 @@
 .stats__text {
-  font-size: 14px;
-  line-height: 18px;
-  color: $text-color--second;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .stats__number {
@@ -9,14 +10,24 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: $base-color--text;
+  color: $text-color--dark-0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__description {
   font-size: 12px;
   line-height: 12px;
-  color: $text-color--second;
+  color: $text-color--base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .stats__item:last-child .stats__number,
@@ -25,6 +36,10 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: $base-color--text;
+  color: $text-color--dark-0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }

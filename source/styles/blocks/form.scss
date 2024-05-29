@@ -1,8 +1,22 @@
-.form__field::placeholder {
+.form__field {
   font-family: $primary-font--second;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 400;
-  color: $text-color--third;
+  color: $text-color--base;
+  text-transform: uppercase;
+}
+
+.form__field::placeholder {
+  color: $text-color--base
+  // opacity: 0.3;
+}
+
+.form__button {
+  font-family: $primary-font--second;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $text-color--light;
   text-transform: uppercase;
 }

@@ -1,14 +1,43 @@
+.card-item__link-title {
+  font-family: $primary-font--second;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $text-color--dark-2;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .card-item__title {
   font-family: $primary-font--second;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: $text-color--second;
+  color: $text-color--dark-2;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card-item__item {
   font-size: 12px;
   line-height: 16px;
-  color: $text-color--third;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card-item__button {
+  font-size: 16px;
+  line-height: 20px;
 }

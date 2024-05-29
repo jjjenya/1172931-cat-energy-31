@@ -1,7 +1,12 @@
 .catalog__title {
   font-family: $primary-font--second;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
   font-weight: 400;
-  color: $base-color--text;
+  color: $text-color--dark-0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

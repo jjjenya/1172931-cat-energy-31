@@ -1,5 +1,8 @@
-.main-footer__dev-name {
-  color: $text-color--third;
+.main-footer__dev {
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color--base;
+  text-decoration: none;
 }
 
 .main-footer__dev-logo {
