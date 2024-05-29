@@ -30,8 +30,8 @@
 .card-item__item {
   font-size: 12px;
   line-height: 16px;
-
-  @media (min-width: $tablet-width) {
+  
+@media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
   }
@@ -40,4 +40,5 @@
 .card-item__button {
   font-size: 16px;
   line-height: 20px;
+
 }
