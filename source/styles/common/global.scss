@@ -8,10 +8,10 @@
 body {
   background-color: $base-color--background;
   font-family: $primary-font--basic;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
-  color: $base-color--text;
+  color: $text-color--base;
 }
 
 img {
@@ -19,5 +19,3 @@ img {
   height: auto;
   object-fit: contain;
 }
-
-//

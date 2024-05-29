@@ -1,28 +1,31 @@
 /* здесь используйте глобальные переменные */
 
+// @media (min-width: $tablet-width) {
+// }
 
+// @media (min-width: $desktop-width) {
+// }
 // Font
 $primary-font--basic: "Lato", "Arial", sans-serif;
 $primary-font--second: "Oswald", "Arial", sans-serif;
 
 // Color
 $base-color--background: #ffffff;
-$base-color--text: #000000;
-$second-color--text: #ffffff;
+
+$text-color--base: #444444;
+$text-color--light: #ffffff;
+$text-color--dark-0: #000000;
+$text-color--dark-1: #111111;
+$text-color--dark-2: #222222;
 
 $button-color--bg-basic: #68b738;
 $button-color--bg-second: #f2f2f2;
 $button-color--text: #ffffff;
 
-$text-color--first: #111111;
-$text-color--second: #222222;
-$text-color--third: #444444;
-
 $background--dark: #68b738;
 // $background--gradient: #7fc256;
 $background--gradient: #46454a;
 $background--content: #f2f2f2;
-
 
 $color-icons: #666666;
 $color-icons--hover-focus-active: #68b738;

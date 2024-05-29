@@ -1,12 +1,17 @@
-.promo__text {
+.section-title-catalog {
   font-family: $primary-font--second;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $text-color--dark-0;
 
   @media (min-width: $tablet-width) {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
   }
 }

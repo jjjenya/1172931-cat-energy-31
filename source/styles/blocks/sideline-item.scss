@@ -3,13 +3,27 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: $text-color--third;
+  color: $text-color--dark-2;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .sideline-item__number,
 .sideline-item__price {
   font-size: 14px;
   line-height: 14px;
-  color: $text-color--third;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.sideline-item__button {
+  font-size: 16px;
+  line-height: 20px;
 }

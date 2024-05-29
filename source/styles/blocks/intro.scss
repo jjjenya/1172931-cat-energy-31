@@ -34,15 +34,34 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $second-color--text;
+  color: $text-color--light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $text-color--dark-0;
+  }
 }
 
 .intro__text {
   font-family: $primary-font--second;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 14px;
-  font-weight: 400;
-  color: $second-color--text;
+  color: $text-color--light;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-color--dark-0;
+  }
+}
+
+.intro__button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 // .intro__img {
