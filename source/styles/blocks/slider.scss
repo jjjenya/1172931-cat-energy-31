@@ -1,47 +1,57 @@
 .slider {
-  position: relative;
-  grid-column: 1 / -1;
-  grid-row: 5 / 6;
-  display: grid;
-  grid-template-columns: calc(0.5 * 100%) auto calc((1 - 0.5) * 100%);
   margin: 0 auto;
-  width: min(100%, 560px);
-  aspect-ratio: 280/256;
+  position: relative;
+  overflow: hidden;
+  min-height: 256px;
+  width: 280px;
 
-  @media (min-width: $desktop-width) {
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    margin: 0;
-  }
-
-  picture,
-  source {
-    display: contents;
+  @media (min-width: $tablet-width) {
+    min-height: 512px;
+    width: 560px;
   }
 }
 
-.slider__img {
-  display: block;
-  width: 100%;
+.slider__pic-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
   height: 100%;
-  object-fit: cover;
+  overflow: hidden;
 
-  &--before {
-    object-position: left;
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $base-color--background 151px, $background--slider 1px);
   }
+}
 
-  &--after {
-    object-position: right;
-  }
+.slider__pic-wrapper--before {
+  z-index: 1;
+  background-color: #eaeaea;
+}
+
+.slider__pic-wrapper--after {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: -4px;
+  // left: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.slider__image {
+  height: 100%;
+  width: auto;
+  max-width: none;
 }
 
 .slider__toggle {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 50%;
   width: 4px;
   height: 100%;
-  margin-left: -2px;
   background-color: $color-icons;
   border-radius: 2px;
   border: none;

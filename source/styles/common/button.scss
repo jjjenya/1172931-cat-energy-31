@@ -1,5 +1,7 @@
 .button {
+  display: inline-block;
   background-color: $button-color--bg-basic;
+  border: 0;
   font-family: $primary-font--second;
   font-weight: 400;
   color: $button-color--text;

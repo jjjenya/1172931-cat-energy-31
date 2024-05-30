@@ -1,9 +1,10 @@
 .container {
+  --padding-mobile: 20px;
+
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-  min-width: $mobile-width;
-  max-width: $desktop-width;
+  padding: 0 var(--padding-mobile);
+  min-width: calc($mobile-width - 2*var(--padding-mobile));
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -11,5 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
+    margin: 0 auto;
+    max-width: 1300px;
   }
 }

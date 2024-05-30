@@ -4,16 +4,36 @@
   border: 0;
   width: 24px;
   height: 24px;
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
 
-.main-nav__toggle::before {
+.main-nav__toggle--open::before {
   content: "";
   display: block;
   width: 24px;
   height: 24px;
   background-color: $text-color--dark-0;
-  mask-image: url("../../icons/stack.svg#menu--toggle");
+  mask-image: url("../../icons/stack.svg#menu-toggle--open");
   mask-size: 24px 24px;
-  mask-position: center;
-  mask-repeat: no-repeat;
+}
+
+.main-nav__toggle--close::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  background-color: $text-color--dark-0;
+  mask-image: url("../../icons/stack.svg#menu-toggle--close");
+  mask-size: 20px 20px;
+}
+
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
+  opacity: 0.5;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.2;
 }

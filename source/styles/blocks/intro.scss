@@ -3,8 +3,10 @@
   background-image:
     linear-gradient(to top, $base-color--background 0, $base-color--background 178px, rgba($background--dark, 0.85) 178px, rgba($background--dark, 0.85) 100%),
     image-set(
-      url("../../images/intro-bg--mobile@1x.jpg") type("image/png") 1x,
-      url("../../images/intro-bg--mobile@2x.jpg") type("image/png") 2x
+      url("../../images/intro-bg--mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/intro-bg--mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/intro-bg--mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/intro-bg--mobile@2x.jpg") type("image/jpeg") 2x
     );
   background-repeat: no-repeat;
   background-position: top;
@@ -19,8 +21,10 @@
     background-image:
       linear-gradient(to top, $base-color--background 0, $base-color--background 178px, rgba($background--dark, 0.85) 178px, rgba($background--dark, 0.85) 100%),
       image-set(
-        url("../../images/intro-bg--desktop@1x.jpg") type("image/png") 1x,
-        url("../../images/intro-bg--desktop@2x.jpg") type("image/png") 2x
+        url("../../images/intro-bg--desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/intro-bg--desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/intro-bg--desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/intro-bg--desktop@2x.jpg") type("image/jpeg") 2x
       );
     background-repeat: no-repeat;
     background-size: 720px 694px;
@@ -58,6 +62,9 @@
 }
 
 .intro__button {
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;

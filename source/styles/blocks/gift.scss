@@ -31,8 +31,10 @@
     background-image:
       linear-gradient(to top, rgba($background--dark, 0.85), rgba($background--dark, 0.85)),
       image-set(
-        url("../../images/sideline-bg--desktop@1x.jpg") type("image/png") 1x,
-        url("../../images/sideline-bg--desktop@2x.jpg") type("image/png") 2x
+        url("../../images/sideline-bg--desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/sideline-bg--desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/sideline-bg--desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/sideline-bg--desktop@2x.jpg") type("image/jpeg") 2x
       );
     background-repeat: no-repeat;
     background-size: 245px 288px;

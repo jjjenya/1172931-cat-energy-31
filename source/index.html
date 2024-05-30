@@ -17,7 +17,7 @@
   <header class="main-header">
     <div class="container">
       <div class="main-header__logo-wrapper">
-        <a class="main-header__logo" href="index.html">
+        <a class="main-header__logo-link" href="index.html">
           <picture class="main-header__logo-icon">
             <source media="(min-width: 1440px)" srcset="images/icons/logo--desktop.svg" width="70" height="59" type="image/svg+xml">
             <source media="(min-width: 768px)" srcset="images/icons/logo--tablet.svg" width="60" height="50" type="image/svg+xml">
@@ -32,7 +32,7 @@
       </div>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -151,20 +151,27 @@
           </div>
         </dl>
         <div class="stats__slider slider">
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/slider-fat--desktop-tablet@1x.png 1x, images/slider-fat--desktop-tablet@2x.png 2x" width="560" height="512">
-            <img class="slider__img slider__img--before" src="images/slider-fat--mobile@1x.png" srcset="images/slider-fat--mobile@2x.png 2x" width="280" height="256" alt="Кот-пухляш">
-          </picture>
+          <div class="slider__pic-wrapper slider__pic-wrapper--before">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="images/slider-fat--desktop-tablet@1x.png 1x, images/slider-fat--desktop-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image" src="images/slider-fat--mobile@1x.png" srcset="images/slider-fat--mobile@2x.png 2x" width="280" height="256" alt="Кот-пухляш">
+            </picture>
+          </div>
+
+          <div class="slider__pic-wrapper slider__pic-wrapper--after">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="images/slider-slim--desktop-tablet@1x.png 1x, images/slider-slim--desktop-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image" src="images/slider-slim--mobile@1x.png" srcset="images/slider-slim--mobile@2x.png 2x" width="280" height="256" alt="Стройный кот">
+            </picture>
+          </div>
+
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Переключить картинку</span>
             <svg class="slider__icon" width="24" height="28">
-              <use href="../../icons/stack.svg#slider-arrows"></use>
+              <use href="icons/stack.svg#slider-arrows"></use>
             </svg>
           </button>
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/slider-slim--desktop-tablet@1x.png 1x, images/slider-slim--desktop-tablet@2x.png 2x" width="560" height="512">
-            <img class="slider__img slider__img--after" src="images/slider-slim--mobile@1x.png" srcset="images/slider-slim--mobile@2x.png 2x" width="280" height="256" alt="Стройный кот">
-          </picture>
+
         </div>
       </div>
     </section>
@@ -197,7 +204,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
               <svg class="socials__svg" width="28" height="22">
-                <use href="../icons/stack.svg#soc-vk"></use>
+                <use href="icons/stack.svg#soc-vk"></use>
               </svg>
               <span class="visually-hidden">Vkontakte</span>
             </a>
@@ -205,7 +212,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
               <svg class="socials__svg" width="28" height="22">
-                <use href="../icons/stack.svg#soc-yt"></use>
+                <use href="icons/stack.svg#soc-yt"></use>
               </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -213,7 +220,7 @@
           <li class="socials__item">
             <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
               <svg class="socials__svg" width="28" height="22">
-                <use href="../icons/stack.svg#soc-tg"></use>
+                <use href="icons/stack.svg#soc-tg"></use>
               </svg>
               <span class="visually-hidden">Telegram</span>
             </a>
@@ -223,7 +230,7 @@
         <div class="main-footer__dev-wrapper">
           <a class="main-footer__dev" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
             <svg class="main-footer__dev-logo" width="27" height="34">
-              <use href="../icons/stack.svg#logo--html"></use>
+              <use href="icons/stack.svg#logo--html"></use>
             </svg>
             <span class="visually-hidden">Посетить сайт разработчика HTML Academy</span>
             <p class="main-footer__dev-name">HTML Academy</p>
