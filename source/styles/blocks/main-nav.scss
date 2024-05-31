@@ -1,15 +1,18 @@
 .main-nav {
   width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 // Кнопка
 .main-nav__toggle {
-  --padding-mobile: 20px;
-
   position: absolute;
   display: block;
   top: 7px;
-  right: var(--padding-mobile);
+  right: $padding-mobile;
   z-index: 9;
   padding: 0;
   background-color: $base-color--background;
@@ -33,7 +36,25 @@
   opacity: 0.2;
 }
 
-// Меню: закрытие, открытие, без js
+// Меню
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    justify-content: flex-end;
+    padding-top: 7px;
+    padding-right: calc($padding-tablet + 5px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    padding-right: $padding-desktop;
+  }
+}
+
+
+// закрытие, открытие, без js
 
 .main-nav--open .main-nav__toggle::before {
   content: "";
@@ -47,6 +68,10 @@
 
 .main-nav--open .main-nav__list {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav--close .main-nav__toggle::before {
@@ -83,4 +108,3 @@
 .main-nav--no-js .main-nav__list {
   border-bottom: 1px solid  $color--line;
 }
-

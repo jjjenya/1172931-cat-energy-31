@@ -1,17 +1,15 @@
 .container {
-  --padding-mobile: 20px;
-
   width: 100%;
   margin: 0 auto;
-  padding: 0 var(--padding-mobile);
-  min-width: calc($mobile-width - 2*var(--padding-mobile));
+  padding: 0 $padding-mobile;
+  min-width: calc($mobile-width - 2*$padding-mobile);
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 $padding-tablet;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 40px;
+    padding: 0 $padding-desktop;
     margin: 0 auto;
     width: 1300px;
   }

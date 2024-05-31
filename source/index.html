@@ -23,7 +23,7 @@
           <img class="main-header__logo-icon" src="images/icons/logo--mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
         <picture>
-          <source media="(min-width: 1440px)" srcset="images/icons/name--many.svg" width="101" height="18" type="image/svg+xml">
+          <source media="(min-width: 1440px)" srcset="images/icons/name--many.svg" width="118" height="21" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/icons/name--one.svg" width="101" height="18" type="image/svg+xml">
           <img class="main-header__logo-name" src="images/icons/name--one.svg" width="101" height="18" alt="CAT ENERGY">
         </picture>
@@ -33,7 +33,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list list-all">
+        <ul class="main-nav__list site-list list-all ">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="index.html">
               Главная
@@ -59,14 +59,17 @@
 
     <section class="intro">
       <div class="container">
-        <h2 class="intro__title">Функциональное питание для котов</h2>
+        <h2 class="intro__title">Функциональное питание для&nbsp;котов</h2>
         <p class="intro__text">Занялся собой? Займись котом!</p>
         <a class="intro__button button" href="programm.html">Подобрать программу</a>
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/intro-img--desktop@1x.png 1x, images/intro-img--desktop@2x.png 2x" width="552" height="499">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/intro-img--tablet@1x.png 1x, images/intro-img--tablet@2x.png 2x" width="709" height="609">
-          <img class="intro__img" src="images/intro-img--mobile@1x.png" srcset="images/intro-img--mobile@2x.png 2x" width="280" height="270" alt="Упаковка-стакан CAT ENERGY PRO - курица">
-        </picture>
+        <div class="intro__wrapper-img">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/intro-img--desktop@1x.png 1x, images/intro-img--desktop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/intro-img--tablet@1x.png 1x, images/intro-img--tablet@2x.png 2x" width="709" height="609">
+            <img class="intro__img" src="images/intro-img--mobile@1x.png" srcset="images/intro-img--mobile@2x.png 2x" width="280" height="270" alt="Упаковка-стакан CAT ENERGY PRO - курица">
+          </picture>
+        </div>
+
       </div>
     </section>
 
