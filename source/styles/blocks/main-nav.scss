@@ -1,5 +1,12 @@
 // Кнопка
 .main-nav__toggle {
+  --padding-mobile: 20px;
+
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: var(--padding-mobile);
+  z-index: 9;
   padding: 0;
   background-color: $base-color--background;
   border: 0;
@@ -7,9 +14,31 @@
   height: 24px;
   mask-position: center;
   mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-nav__toggle--open::before {
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
+  opacity: 0.5;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.2;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+// Меню
+
+
+// закрытие, открытие, без js
+
+.main-nav--open .main-nav__toggle::before {
   content: "";
   display: block;
   width: 24px;
@@ -19,7 +48,11 @@
   mask-size: 24px 24px;
 }
 
-.main-nav__toggle--close::before {
+.main-nav--open .main-nav__list {
+  display: none;
+}
+
+.main-nav--close .main-nav__toggle::before {
   content: "";
   display: block;
   width: 20px;
@@ -30,29 +63,23 @@
   mask-size: 20px 20px;
 }
 
-.main-nav__toggle--no-js {
-  display: none;
-}
-
-.main-nav__toggle:hover,
-.main-nav__toggle:focus {
-  opacity: 0.5;
-}
-
-// Меню
-.main-nav__toggle--open + .main-nav__wrapper {
-  display: none;
-}
-
-.main-nav__list {
+.main-nav--close .main-nav__list {
   position: absolute;
   width: 100%;
   top: 56px;
   left: 0;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
-.main-nav__toggle:active {
-  opacity: 0.2;
+.main-nav--no-js {
+  display: block;
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
 }
 
