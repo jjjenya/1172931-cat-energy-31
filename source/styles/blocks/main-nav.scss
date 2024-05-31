@@ -1,3 +1,7 @@
+.main-nav {
+  width: 100%;
+}
+
 // Кнопка
 .main-nav__toggle {
   --padding-mobile: 20px;
@@ -29,14 +33,7 @@
   opacity: 0.2;
 }
 
-.main-nav {
-  width: 100%;
-}
-
-// Меню
-
-
-// закрытие, открытие, без js
+// Меню: закрытие, открытие, без js
 
 .main-nav--open .main-nav__toggle::before {
   content: "";
@@ -76,10 +73,14 @@
 }
 
 .main-nav--no-js {
-  display: block;
+  // display: block;
 }
 
 .main-nav--no-js .main-nav__toggle {
   display: none;
+}
+
+.main-nav--no-js .main-nav__list {
+  border-bottom: 1px solid  $color--line;
 }
 

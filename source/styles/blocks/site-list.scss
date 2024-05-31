@@ -25,10 +25,10 @@
 
 .site-list__link:hover,
 .site-list__link:focus {
-  opacity: 0.7;
+  color: rgba($text-color--dark-0, 0.5);
 }
 
 .site-list__link:active {
-  opacity: 0.3;
+  color: rgba($text-color--dark-0, 0.2);
 }
 
