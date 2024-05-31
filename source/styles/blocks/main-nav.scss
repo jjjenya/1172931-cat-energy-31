@@ -1,6 +1,7 @@
+// Кнопка
 .main-nav__toggle {
   padding: 0;
-  background-color: #ffffff;
+  background-color: $base-color--background;
   border: 0;
   width: 24px;
   height: 24px;
@@ -23,10 +24,14 @@
   display: block;
   width: 20px;
   height: 20px;
-  padding: 4px;
+  margin-left: 6px;
   background-color: $text-color--dark-0;
   mask-image: url("../../icons/stack.svg#menu-toggle--close");
   mask-size: 20px 20px;
+}
+
+.main-nav__toggle--no-js {
+  display: none;
 }
 
 .main-nav__toggle:hover,
@@ -34,6 +39,20 @@
   opacity: 0.5;
 }
 
+// Меню
+.main-nav__toggle--open + .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav__list {
+  position: absolute;
+  width: 100%;
+  top: 56px;
+  left: 0;
+  background-color: #ffffff;
+}
+
 .main-nav__toggle:active {
   opacity: 0.2;
 }
+

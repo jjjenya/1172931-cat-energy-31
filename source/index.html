@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
@@ -15,23 +15,21 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="container">
-      <div class="main-header__logo-wrapper">
-        <a class="main-header__logo-link" href="index.html">
-          <picture class="main-header__logo-icon">
-            <source media="(min-width: 1440px)" srcset="images/icons/logo--desktop.svg" width="70" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/logo--tablet.svg" width="60" height="50" type="image/svg+xml">
-            <img src="images/icons/logo--mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-          </picture>
-          <picture class="main-header__logo-name">
-            <source media="(min-width: 1440px)" srcset="images/icons/name--many.svg" width="101" height="18" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/icons/name--one.svg" width="101" height="18" type="image/svg+xml">
-            <img src="images/icons/name--one.svg" width="101" height="18" alt="CAT ENERGY">
-          </picture>
-        </a>
-      </div>
+    <div class="main-header__container container">
+      <a class="main-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/icons/logo--desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/icons/logo--tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="main-header__logo-icon" src="images/icons/logo--mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/icons/name--many.svg" width="101" height="18" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/icons/name--one.svg" width="101" height="18" type="image/svg+xml">
+          <img class="main-header__logo-name" src="images/icons/name--one.svg" width="101" height="18" alt="CAT ENERGY">
+        </picture>
+      </a>
 
-      <nav class="main-nav">
+      <nav class="main-header__main-nav main-nav">
         <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -78,7 +76,7 @@
       <div class="container">
         <h2 class="visually-hidden">Программы питания</h2>
 
-        <ul class="content__list">
+        <ul class="content__list list-all">
           <li class="content__item content__item--weight-loss">
             <h3 class="content__title">Похудение</h3>
             <p class="content__text">

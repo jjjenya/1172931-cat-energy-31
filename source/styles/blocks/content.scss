@@ -1,9 +1,13 @@
+// .content__list {
+
+// }
+
 .content__item {
   position: relative;
   background-color: $background--content;
   padding: 20px;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -11,18 +15,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 20px;
   }
 
-  &--weight-loss::before {
+  &--weight-loss::after {
+    top: -4px;
     width: 50px;
     height: 53px;
     background-image: url("../../icons/stack.svg#cat--weight_loss");
   }
 
-  &--weight-gain::before {
+  &--weight-gain::after {
+    left: -8px;
+    top: 0;
     width: 67px;
     height: 50px;
     background-image: url("../../icons/stack.svg#cat--weight_gain");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $background--dark;
+    background-size: 50px 50px;
+    border-radius: 50%;
+    margin: 20px;
   }
 }
 
@@ -34,6 +56,7 @@
   font-weight: 400;
   color: $text-color--dark-0;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
