@@ -1,3 +1,4 @@
+
 .slider {
   margin: 0 auto;
   position: relative;
@@ -9,6 +10,12 @@
     min-height: 512px;
     width: 560px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   position: absolute;
+  //   margin-right: 0;
+  //   transform: translate(137%, -106%);
+  // }
 }
 
 .slider__pic-wrapper {
