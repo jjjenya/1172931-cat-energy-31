@@ -25,14 +25,29 @@ $button-color--text: #ffffff;
 $background--dark: #68b738;
 // $background--gradient: #7fc256;
 $background--gradient: #46454a;
+
+$background--gradient-left: #4d4c52;
+$background--gradient-right: #3f3e43;
+$background--gradient-desktop: #65a83e;
+
 $background--content: #f2f2f2;
+$background--slider: #eaeaea;
+
+$color--line: #e6e6e6;
 
 $color-icons: #666666;
 $color-icons--hover-focus-active: #68b738;
 $color-plus: #d3d3d3;
 $color-toggle: #5eaa2f;
+$color-line: #d9d9d9;
 
 // media
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+
+// padding-container
+
+$padding-mobile: 20px;
+$padding-tablet: 30px;
+$padding-desktop: 40px;

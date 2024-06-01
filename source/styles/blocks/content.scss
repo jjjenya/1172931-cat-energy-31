@@ -1,9 +1,38 @@
+.content__list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+
+    margin-bottom: 0;
+  }
+}
+
 .content__item {
   position: relative;
-  background-color: $background--content;
+  margin-bottom: 19px;
   padding: 20px;
+  background-color: $background--content;
 
-  &::before {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 78px 312px 55px 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    padding: 78px 52px 59px;
+  }
+
+
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -11,23 +40,101 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 20px 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
   }
 
-  &--weight-loss::before {
-    width: 50px;
+  &--weight-loss::after {
+    top: 0;
+    left: 7px;
+    width: 36px;
     height: 53px;
     background-image: url("../../icons/stack.svg#cat--weight_loss");
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 194px;
+      top: 48%;
+      left: auto;
+      right: 92px;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 97px;
+      top: 90px;
+      left: 67px;
+    }
   }
 
-  &--weight-gain::before {
+  &--weight-gain::after {
+    left: -8px;
+    top: 14px;
     width: 67px;
-    height: 50px;
+    height: 28px;
     background-image: url("../../icons/stack.svg#cat--weight_gain");
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 112px;
+      top: 52%;
+      left: auto;
+      right: 30px;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 134px;
+      height: 110px;
+      top: 97px;
+      left: 33px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $background--dark;
+    background-size: 50px 50px;
+    border-radius: 50%;
+    margin: 24px 0 0 20px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 200px;
+      height: 200px;
+      top: 52%;
+      left: auto;
+      right: 63px;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 97px;
+      left: 51px;
+    }
   }
 }
 
 
 .content__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 10px 0 0 70px;
+
   font-family: $primary-font--second;
   font-size: 24px;
   line-height: 37px;
@@ -35,21 +142,47 @@
   color: $text-color--dark-0;
   text-transform: uppercase;
 
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
   }
 }
 
 .content__text {
+  margin: 0;
+  padding-bottom: 19px;
   font-size: 14px;
   line-height: 18px;
-  color: $text-color--dark-2;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     color: $text-color--dark-0;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 22px;
+    width: 100%;
+    border-bottom: 1px solid $color-line;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -84,10 +217,16 @@
   top: 6px;
   right: 0;
   display: block;
-  width: 32px;
+  width: 31px;
   height: 10px;
   background-image: url("../../icons/stack.svg#arrow");
-  background-position: right 8px top 0;
+  background-position: right 5px top 1px;
   background-repeat: no-repeat;
-  background-size: 32px 10px;
+  background-size: 31px 10px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    right: -7px;
+    background-position: right 5px top 1px;
+  }
 }

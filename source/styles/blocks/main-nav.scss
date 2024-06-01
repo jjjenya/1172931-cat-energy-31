@@ -1,19 +1,110 @@
+.main-nav {
+  width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+// Кнопка
 .main-nav__toggle {
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: $padding-mobile;
+  z-index: 9;
   padding: 0;
-  background-color: #ffffff;
+  background-color: $base-color--background;
   border: 0;
   width: 24px;
   height: 24px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-nav__toggle::before {
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
+  opacity: 0.5;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.2;
+}
+
+// Меню
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    justify-content: flex-end;
+    padding-top: 7px;
+    padding-right: calc($padding-tablet + 5px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+    padding-right: $padding-desktop;
+  }
+}
+
+
+// закрытие, открытие, без js
+
+.main-nav--open .main-nav__toggle::before {
   content: "";
   display: block;
   width: 24px;
   height: 24px;
   background-color: $text-color--dark-0;
-  mask-image: url("../../icons/stack.svg#menu--toggle");
+  mask-image: url("../../icons/stack.svg#menu-toggle--open");
   mask-size: 24px 24px;
-  mask-position: center;
-  mask-repeat: no-repeat;
+}
+
+.main-nav--open .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav--close .main-nav__toggle::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  background-color: $text-color--dark-0;
+  mask-image: url("../../icons/stack.svg#menu-toggle--close");
+  mask-size: 20px 20px;
+}
+
+.main-nav--close .main-nav__list {
+  position: absolute;
+  width: 100%;
+  top: 56px;
+  left: 0;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+.main-nav--no-js {
+  // display: block;
+}
+
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--no-js .main-nav__list {
+  border-bottom: 1px solid  $color--line;
 }

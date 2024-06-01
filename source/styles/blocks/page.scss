@@ -1,3 +1,20 @@
 .page__body {
   margin: 0;
+  margin-top: 13px;
+  min-width: $mobile-width;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
+}
+
+.page__container {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
