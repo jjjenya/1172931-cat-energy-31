@@ -1,0 +1,1 @@
+var a=document.querySelector(".main-nav"),n=document.querySelector(".main-nav__toggle");a.classList.remove("main-nav--no-js");a.classList.add("main-nav--open");n.addEventListener("click",()=>{a.classList.contains("main-nav--open")?(a.classList.remove("main-nav--open"),a.classList.add("main-nav--close")):(a.classList.add("main-nav--open"),a.classList.remove("main-nav--close"))});
