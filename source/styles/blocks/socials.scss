@@ -6,6 +6,10 @@
   width: 28px;
   height: 20px;
   fill: $color-icons;
+
+  @media (min-width: $tablet-width) {
+    height: 22px;
+  }
 }
 
 .socials__link[href]:hover .socials__svg,

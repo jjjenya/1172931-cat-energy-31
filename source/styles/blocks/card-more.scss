@@ -1,4 +1,48 @@
+.card-more::before {
+  content: "";
+  display: block;
+  margin-bottom: 23px;
+  width: 30px;
+  height: 30px;
+  background:
+    linear-gradient($color-plus, $color-plus),
+    linear-gradient($color-plus, $color-plus);
+  background-position: center;
+  background-size: 100% 2px, 2px 100%; /* thickness = 2px, length = 50% (25px) */
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+}
+
+.card-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 48px 38px 0;
+  }
+}
+
 .card-more__title {
+  margin: 0;
+  margin-bottom: 9px;
   font-family: $primary-font--second;
   font-size: 16px;
   line-height: 20px;
@@ -7,22 +51,44 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    // padding-top: 20px;
     font-size: 20px;
     line-height: 24px;
+    max-width: 170px;
+    text-align: center;
+    padding-bottom: 23;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
 .card-more__text {
+  margin: 0;
+  padding-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    max-width: 170px;
+    text-align: center;
+    padding-bottom: 83px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 91px;
+    width: 100%;
   }
 }
 
 .card-more__button {
+  width: 100%;
+  padding: 10px 20px;
+
   background-color: $button-color--bg-second;
   font-family: $primary-font--second;
   font-size: 16px;
@@ -30,4 +96,5 @@
   font-weight: 400;
   color: $text-color--base;
   text-transform: uppercase;
+  text-align: center;
 }

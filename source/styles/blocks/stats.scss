@@ -1,5 +1,5 @@
 .stats {
-  margin-bottom: 26px;
+  // margin-bottom: 26px;
   padding-bottom: 40px;
   background-color: $background--slider;
 
@@ -12,10 +12,16 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 546px 560px;
-    gap: 224px;
-    background-image: linear-gradient(to top, $background--slider 0, $background--slider 487px, $base-color--background 487px, $base-color--background 100%);
+    grid-template-columns: 505px 560px;
+    gap: 151px;
+    background-image: linear-gradient(to top, $background--slider 0, $background--slider 462px, $base-color--background 462px, $base-color--background 100%);
+
+
+    justify-content: center;
+    padding: 0 $padding-desktop;
     padding-bottom: 74px;
+    margin: 0 auto;
+    // width: 1440px;
   }
 }
 
@@ -27,9 +33,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 70px;
+    // margin-left: 30px;
     margin-bottom: 0;
-    padding-left: 40px;
+    margin-left: -42px;
   }
 }
 
