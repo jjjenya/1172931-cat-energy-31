@@ -5,14 +5,11 @@
     padding: 0 $padding-desktop;
     margin: 0 auto;
     width: 1300px;
-
     position: relative;
   }
 }
 
 .contacts__wrapper {
-
-
   display: grid;
   grid-template-columns: 140px 140px;
   justify-content: space-around;
@@ -21,7 +18,6 @@
   margin: 0 auto;
   padding-bottom: 26px;
   padding-top: 26px;
-
 
   @media (min-width: $tablet-width) {
     padding: 62px 70px;
@@ -40,7 +36,6 @@
     top: 95px;
   }
 }
-
 
 .contacts__title {
   margin: 0;
@@ -127,6 +122,17 @@
     background-size: contain;
 
 
+    min-height: 400px;
+  }
+}
+
+.contacts__map {
+  display: block;
+  border: 0;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
     min-height: 400px;
   }
 }
