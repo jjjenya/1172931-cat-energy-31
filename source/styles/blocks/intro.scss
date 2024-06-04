@@ -111,6 +111,15 @@
   }
 }
 
+.intro__button:hover,
+.intro__button:focus-visible {
+  background-color: $color-toggle;
+}
+
+.intro__button:active {
+  color: rgba($text-color--light, 0.3);
+}
+
 .intro__wrapper-img {
   position: relative;
 }
