@@ -98,3 +98,9 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.card-more__buttone:hover,
+.card-more__button:focus-visible,
+.card-more__button:active {
+  background-color: $color--line-catalog-1;
+}

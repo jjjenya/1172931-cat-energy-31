@@ -6,14 +6,35 @@
   color: $text-color--base;
   text-transform: uppercase;
 
+  border: 0;
+
+  outline: 1px solid $color-form-1;
+  outline-offset: -1px;
+  transition: outline 0.3s;
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
+  &:hover {
+    outline: 1px solid $color--line-catalog-2;
+    outline-offset: -1px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $text-color--base;
+    outline-offset: -2px;
+  }
+
+  &:user-invalid {
+    outline: 2px solid $color-form-2;
+    outline-offset: -2px;
+  }
 }
 
+
 .form__field::placeholder {
-  color: $text-color--base
-  // opacity: 0.3;
+  color: $text-color--base;
 }
 
 .form__button {

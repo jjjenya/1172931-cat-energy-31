@@ -8,3 +8,12 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.button--style:hover,
+.button--style:focus-visible {
+  background-color: $color-toggle;
+}
+
+.button--style:active {
+  color: rgba($text-color--light, 0.3);
+}
