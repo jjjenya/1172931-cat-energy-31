@@ -37,7 +37,7 @@
 
 .sideline__title::before {
   --padding-top: 24px;
-
+  top: 34px;
   box-shadow: 100vw 0 0 0 $background--dark;
 
 
@@ -52,7 +52,7 @@
 }
 
 .sideline__list {
-  padding-bottom: 37px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $color--line-catalog-2;

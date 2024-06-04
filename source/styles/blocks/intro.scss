@@ -61,9 +61,7 @@
 
 .intro__text {
   margin: 0;
-  // padding-bottom: 29px;
   font-family: $primary-font--second;
-  // font-size: 14px;
   line-height: 14px;
   color: $text-color--light;
   text-transform: uppercase;
@@ -142,19 +140,3 @@
     z-index: 1;
   }
 }
-
-// .intro__img {
-//   display: block;
-//   text-align: center;
-//   margin: 0 auto;
-
-//   @media (min-width: $tablet-width) {
-//     position: absolute;
-//     bottom: 0;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     top: 143px;
-//     right: 331px;
-//   }
-// }

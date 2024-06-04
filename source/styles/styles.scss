@@ -5,10 +5,9 @@
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 @import "./common/list-all.scss";
-@import "./common/button.scss";
-
 
 /* BLOCKS */
+@import "./blocks/button.scss";
 @import "./blocks/card.scss";
 @import "./blocks/card-item.scss";
 @import "./blocks/card-more.scss";

@@ -204,11 +204,6 @@
   }
 }
 
-// .content__link:hover::after {
-//   background-position: right 0 top 0;
-//   transition: 0.2s;
-// }
-
 .content__link:hover::after,
 .content__link:focus-visible::after,
 .content__link:active::after {
@@ -221,20 +216,6 @@
 .content__link:active {
   opacity: 0.3;
 }
-
-// .content__link::after {
-// content: "";
-// position: absolute;
-// top: 5px;
-// right: 0;
-// display: block;
-// width: 31px;
-// height: 10px;
-// background-image: url("../../icons/stack.svg#arrow");
-// background-position: right 5px top 1px;
-// background-repeat: no-repeat;
-// background-size: 31px 10px;
-// }
 
 .content__link::after {
   content: "";
@@ -249,16 +230,8 @@
   transition: mask-position 0.3s;
 
   @media (min-width: $tablet-width) {
-    // top: 8px;
-    // right: -7px;
-    // background-position: right 5px top 1px;
     margin-left: 26px;
     margin-bottom: 3px;
     mask-position: right 8px top 0;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-bottom: 3px;
-  //   margin-left: 26px;
-  // }
 }
