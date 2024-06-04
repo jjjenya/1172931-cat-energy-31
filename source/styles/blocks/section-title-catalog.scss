@@ -1,17 +1,44 @@
 .section-title-catalog {
+  --padding-top: 24px;
+
   font-family: $primary-font--second;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $text-color--dark-0;
 
+  margin: 0;
+  padding-top: var(--padding-top);
+  padding-bottom: 35px;
+  position: relative;
+  width: fit-content;
+  background-color: $base-color--background;
+
+
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
+
+    padding-left: 0;
+    padding-right: 0;
   }
+}
+
+.section-title-catalog::before {
+  content: "";
+  position: absolute;
+
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background: $background--dark;
+  z-index: -1;
 }

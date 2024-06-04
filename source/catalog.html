@@ -34,8 +34,8 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list site-list list-all ">
-            <li class="site-list__item ">
+          <ul class="main-nav__list site-list list-all">
+            <li class="site-list__item">
               <a class="site-list__link site-list__catalog" href="index.html">
                 Главная
               </a>
@@ -286,7 +286,7 @@
             </div>
           </li>
           <!-- more -->
-          <li class="card__item card__item--more ">
+          <li class="card__item card__item--more">
             <div class="card__wrapper card-more">
               <h3 class="card-more__title">Показать еще 100500 товаров</h3>
               <p class="card-more__text">На самом деле вкусов гораздо больше!</p>
@@ -296,31 +296,39 @@
         </ul>
       </section>
       <section class="sideline">
-        <div class="container">
+        <div class="sideline__container">
           <h2 class="sideline__title section-title-catalog">Дополнительные товары</h2>
           <ul class="sideline__list list-all">
             <li class="sideline__item sideline-item">
               <h3 class="sideline-item__category">Cахарозаменитель</h3>
-              <p class="sideline-item__number">1 упаковка (100 г)</p>
-              <p class="sideline-item__price">200 ₽</p>
+              <div class="sideline-item__wrapper">
+                <p class="sideline-item__number">1 упаковка (100 г)</p>
+                <p class="sideline-item__price">200 ₽</p>
+              </div>
               <a class="sideline-item__button button" href="#">Заказать</a>
             </li>
             <li class="sideline__item sideline-item">
               <h3 class="sideline-item__category">Питьевая вода</h3>
-              <p class="sideline-item__number">5 литров</p>
-              <p class="sideline-item__price">50 ₽</p>
+              <div class="sideline-item__wrapper">
+                <p class="sideline-item__number">5 литров</p>
+                <p class="sideline-item__price">50 ₽</p>
+              </div>
               <a class="sideline-item__button button" href="#">Заказать</a>
             </li>
             <li class="sideline__item sideline-item">
               <h3 class="sideline-item__category">Молоко</h3>
-              <p class="sideline-item__number">1 литр</p>
-              <p class="sideline-item__price">100 ₽</p>
+              <div class="sideline-item__wrapper">
+                <p class="sideline-item__number">1 литр</p>
+                <p class="sideline-item__price">100 ₽</p>
+              </div>
               <a class="sideline-item__button button" href="#">Заказать</a>
             </li>
             <li class="sideline__item sideline-item">
               <h3 class="sideline-item__category">Витамины</h3>
-              <p class="sideline-item__number">1 упаковка (30 г)</p>
-              <p class="sideline-item__price">300 ₽</p>
+              <div class="sideline-item__wrapper">
+                <p class="sideline-item__number">1 упаковка (30 г)</p>
+                <p class="sideline-item__price">300 ₽</p>
+              </div>
               <a class="sideline-item__button button" href="#">Заказать</a>
             </li>
           </ul>
@@ -328,16 +336,19 @@
             <p class="gift__text">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
           </div>
         </div>
+
       </section>
       <section class="promo">
-        <h2 class="promo__title section-title-catalog">Акции и новинки</h2>
-        <div class="container">
-          <h3 class="promo__text">Подпишитесь на&nbsp;наши новости и&nbsp;не&nbsp;пропустите ни&nbsp;одного предложения!</h3>
-          <form class="promo__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="form__label visually-hidden" for="form-email">Email</label>
-            <input class="form__field" type="email" id="form-email" name="form-email" placeholder="кuklachev@gmail.com" required>
-            <button class="form__button button" type="submit">Подписаться</button>
-          </form>
+        <div class="promo__container">
+          <h2 class="promo__title section-title-catalog">Акции и новинки</h2>
+          <div class="container">
+            <h3 class="promo__text">Подпишитесь на&nbsp;наши новости и не пропустите ни&nbsp;одного предложения!</h3>
+            <form class="promo__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="form__label visually-hidden" for="form-email">Email</label>
+              <input class="form__field" type="email" id="form-email" name="form-email" placeholder="кuklachev@gmail.com" required>
+              <button class="form__button button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="contacts">

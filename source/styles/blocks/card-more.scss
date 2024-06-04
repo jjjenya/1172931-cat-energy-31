@@ -14,10 +14,10 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 41px;
   }
 }
@@ -28,10 +28,10 @@
   align-items: center;
   width: 280px;
   margin: 0 auto;
-  padding-top: 48px;
 
   @media (min-width: $tablet-width) {
     width: 250px;
+    padding: 48px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +57,7 @@
     line-height: 24px;
     max-width: 170px;
     text-align: center;
-    padding-bottom: 23;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {

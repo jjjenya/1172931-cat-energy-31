@@ -1,4 +1,6 @@
 .contacts__container {
+  background-color: $background--content;
+
   @media (min-width: $desktop-width) {
     padding: 0 $padding-desktop;
     margin: 0 auto;
@@ -17,7 +19,7 @@
 
   max-width: 87%;
   margin: 0 auto;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
   padding-top: 26px;
 
 
