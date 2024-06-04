@@ -5,6 +5,10 @@
   font-weight: 400;
   color: $text-color--base;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .form__field::placeholder {
@@ -19,4 +23,9 @@
   font-weight: 400;
   color: $text-color--light;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    min-width: 256px;
+  }
 }

@@ -55,3 +55,15 @@
     }
   }
 }
+
+.site-list__catalog {
+  @media (min-width: $desktop-width) {
+    color: $text-color--dark-1;
+  }
+}
+
+.site-list__item--current .site-list__catalog::after {
+  @media (min-width: $desktop-width) {
+    background: $button-color--bg-basic;
+  }
+}

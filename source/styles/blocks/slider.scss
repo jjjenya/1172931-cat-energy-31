@@ -11,11 +11,10 @@
     width: 560px;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   position: absolute;
-  //   margin-right: 0;
-  //   transform: translate(137%, -106%);
-  // }
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__pic-wrapper {
@@ -28,6 +27,10 @@
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to bottom, $base-color--background 151px, $background--slider 1px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, $base-color--background 136px, $background--slider 1px);
   }
 }
 

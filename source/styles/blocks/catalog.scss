@@ -1,12 +1,56 @@
 .catalog__title {
+  margin: 0;
+  padding: 0 $padding-mobile;
+  min-width: calc($mobile-width - 2*$padding-mobile);
+  padding-top: 27px;
+  padding-bottom: 41px;
+
   font-family: $primary-font--second;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: $text-color--dark-0;
 
+
   @media (min-width: $tablet-width) {
+    padding: 0 $padding-tablet;
+    padding-top: 50px;
+    padding-bottom: 84px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 $padding-desktop;
+    margin: 0 auto;
+    width: 1300px;
+    padding-top: 59px;
+    padding-bottom: 85px;
+  }
+}
+
+.catalog__cards {
+  @media (min-width: $tablet-width) {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    display: flex;
+    // justify-content: space-between;
+    justify-content: flex-start;
+
+    flex-flow: row wrap;
+    width: 100%;
+
+    gap: 60px;
+    padding: 0 $padding-tablet;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding: 0 $padding-desktop;
+    margin: 0 auto;
+    width: 1300px;
+    gap: 64px 60px;
+    margin-bottom: 48px;
   }
 }
