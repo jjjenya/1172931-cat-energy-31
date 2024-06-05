@@ -1,5 +1,4 @@
 .stats {
-  // margin-bottom: 26px;
   padding-bottom: 40px;
   background-color: $background--slider;
 
@@ -14,16 +13,15 @@
     display: grid;
     grid-template-columns: 505px 560px;
     gap: 151px;
-    background-image: linear-gradient(to top, $background--slider 0, $background--slider 462px, $base-color--background 462px, $base-color--background 100%);
-
+    background-image: linear-gradient(to bottom, $base-color--background 0, $base-color--background 136px, $background--slider 136px, $background--slider 100%);
 
     justify-content: center;
     padding: 0 $padding-desktop;
     padding-bottom: 74px;
     margin: 0 auto;
-    // width: 1440px;
   }
 }
+
 
 .stats__container {
   margin-bottom: 20px;
@@ -33,7 +31,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // margin-left: 30px;
     margin-bottom: 0;
     margin-left: -42px;
   }
@@ -86,9 +83,6 @@
     gap: 43px;
     max-width: 768px;
     margin: 0 auto;
-    // margin-bottom: 104px;
-    // grid-template-columns: 162px 162px 162px;
-    // grid-template-rows: 1;
   }
 
   @media (min-width: $desktop-width) {

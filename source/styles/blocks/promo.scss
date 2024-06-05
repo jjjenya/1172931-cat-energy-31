@@ -12,13 +12,13 @@
   }
 }
 
-
 .promo__title {
   width: 100%;
   margin: 0 auto;
-  box-shadow: -20px 0 0 0 $base-color--background, 21px 0 0 0 $base-color--background;
+  box-shadow: -20px 0 0 0 $base-color--background, 41px 0 0 0 $base-color--background;
 
   @media (min-width: $tablet-width) {
+    top: -1px;
     box-shadow: 0 0 0 0 $base-color--background, 0 0 0 0 $base-color--background;
   }
 
@@ -30,6 +30,7 @@
 
 .promo__title::before {
   --padding-top: 24px;
+  top: 34px;
 
   box-shadow: 100vw 0 0 0 $background--dark;
 
@@ -45,25 +46,25 @@
 
 .promo__text {
   margin: 0;
-  margin-top: -2px;
+  margin-top: -3px;
   font-family: $primary-font--second;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: $text-color--dark-0;
   text-align: center;
-  padding: 0 31px 24px;
+  padding: 0 0 24px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 34px;
+
     font-size: 24px;
     line-height: 32px;
+    padding: 32px 31px 24px;
+    margin: 0 auto;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 38px;
-    position: relative;
-    left: -40px;
   }
 }
 
@@ -74,6 +75,7 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 37px 80px;
     flex-direction: row;
     justify-content: space-between;
     gap: 0;
@@ -83,13 +85,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 106px;
-    position: relative;
-    left: -40px;
+    width: 752px;
+    padding: 0 0 104px;
   }
 }
 
 .promo__form > * {
-  height: 56px;
   padding: 13px;
 }

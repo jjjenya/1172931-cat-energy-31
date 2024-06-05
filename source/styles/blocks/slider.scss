@@ -44,7 +44,6 @@
   top: 0;
   height: 100%;
   right: -4px;
-  // left: auto;
   width: 100%;
   overflow: hidden;
   background-color: #eaeaea;
@@ -116,7 +115,6 @@
 .slider__toggle:active::before {
   border-color: rgba($color-toggle, 0.6);
 }
-
 
 .slider__toggle:hover .slider__icon,
 .slider__toggle:focus .slider__icon {

@@ -1,12 +1,14 @@
 .contacts__container {
-  background-color: $background--content;
-
   @media (min-width: $desktop-width) {
     padding: 0 $padding-desktop;
     margin: 0 auto;
     width: 1300px;
     position: relative;
   }
+}
+
+.contacts__container--catalog {
+  background-color: $background--content;
 }
 
 .contacts__wrapper {
@@ -20,7 +22,7 @@
   padding-top: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 62px 70px;
+    padding: 61px 70px;
     margin: 0;
     width: 100%;
     display: flex;
@@ -120,8 +122,6 @@
         url("../../images/map--desktop@2x.png") type("image/png") 2x
       );
     background-size: contain;
-
-
     min-height: 400px;
   }
 }

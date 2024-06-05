@@ -86,25 +86,15 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
-    // text-align: left;
-    // margin: 0 auto;
-    // justify-content: center;
-
-    // gap: 264px;
     max-width: 505px;
 
     display: grid;
-    // grid-template-columns: 80px 161px;
     grid-template-columns: 1fr 161px;
     margin: 0 auto;
     text-align: left;
     align-items: center;
     margin-right: 74px;
     margin-left: auto;
-    // margin-left: 28px;
   }
 
 

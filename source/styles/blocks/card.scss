@@ -17,12 +17,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  // height: calc(100% - 81px);
   width: 100%;
-  padding: 25px 0;
+  padding: 25px 0 24px;
 
   border-bottom: 1px solid $color--line-catalog-1;
-  padding-bottom: 24px;
+
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -35,22 +34,3 @@
     width: 245px;
   }
 }
-
-// .card__item--more::before {
-//   content: "";
-//   display: block;
-//   margin-bottom: 23px;
-//   width: 30px;
-//   height: 30px;
-//   background:
-//     linear-gradient($color-plus, $color-plus),
-//     linear-gradient($color-plus, $color-plus);
-//   background-position: center;
-//   background-size: 50% 2px, 2px 50%; /* thickness = 2px, length = 50% (25px) */
-//   background-repeat: no-repeat;
-
-//
-//     width: 60px;
-//     height: 60px;
-//   }
-// }

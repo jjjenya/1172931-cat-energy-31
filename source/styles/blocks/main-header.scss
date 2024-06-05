@@ -1,6 +1,4 @@
-
-
-.main-header-index::after {
+.main-header--index::after {
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
@@ -25,7 +23,7 @@
   }
 }
 
-.main-header-index::before {
+.main-header--index::before {
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";

@@ -1,3 +1,12 @@
+.site-list--index {
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: auto;
+    max-width: 620px;
+  }
+}
+
 .site-list__link {
   display: block;
   padding: 22px 10px 23px;
@@ -29,12 +38,10 @@
 .site-list__link:hover,
 .site-list__link:focus {
   opacity: 0.6;
-  // color: rgba($text-color--dark-0, 0.6);
 }
 
 .site-list__link:active {
   opacity: 0.3;
-  // color: rgba($text-color--dark-0, 0.3);
 }
 
 .site-list__item--current .site-list__link {

@@ -1,6 +1,6 @@
 .main-nav {
   width: 100%;
-
+  z-index: 1000;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -86,19 +86,16 @@
 }
 
 .main-nav--close .main-nav__list {
+
   position: absolute;
   width: 100%;
-  top: 56px;
+  top: 51px;
   left: 0;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     position: static;
   }
-}
-
-.main-nav--no-js {
-  // display: block;
 }
 
 .main-nav--no-js .main-nav__toggle {
