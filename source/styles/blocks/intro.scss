@@ -24,7 +24,6 @@
     background-color: inherit;
     min-height: 547px;
     margin-bottom: 100px;
-    position: relative;
   }
 }
 
@@ -122,10 +121,6 @@
 
 .intro__wrapper-img {
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    position: static;
-  }
 }
 
 .intro__img {
@@ -141,8 +136,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 14px;
-    left: 556px;
+    top: -315px;
+    left: 447px;
     z-index: 1;
   }
 }
