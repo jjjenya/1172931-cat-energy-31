@@ -13,8 +13,7 @@
     display: grid;
     grid-template-columns: 505px 560px;
     gap: 151px;
-    background-image: linear-gradient(to top, $background--slider 0, $background--slider 462px, $base-color--background 462px, $base-color--background 100%);
-
+    background-image: linear-gradient(to bottom, $base-color--background 0, $base-color--background 136px, $background--slider 136px, $background--slider 100%);
 
     justify-content: center;
     padding: 0 $padding-desktop;
@@ -22,6 +21,7 @@
     margin: 0 auto;
   }
 }
+
 
 .stats__container {
   margin-bottom: 20px;

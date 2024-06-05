@@ -19,7 +19,6 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-items: flex-end;
   }
 }
 
@@ -60,7 +59,7 @@
 
 .main-footer__socials {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   gap: 24px;
 
@@ -122,4 +121,10 @@
 
 .main-footer__dev-name {
   margin: 0;
+}
+
+.main-footer__wrapper-local {
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
