@@ -1,44 +1,54 @@
-# Личный проект «Кэт энерджи»
+# проект «CAT ENERGY» 
 
-* Студент: [Евгения Сабирова](https://up.htmlacademy.ru/adaptive/31/user/1172931)
-* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761)
+
+**интернет-магазин: подбор и заказ питания для котов:**
+
+   * создание разметки по методологии БЭМ
+   * CSS на препроцессоре Sass
+   * адаптивная сетка
+   * работа с адаптивной и ретиновой графикой
+
+
+
+верстка: [Евгения Сабирова](https://github.com/jjjenya)
+
+
+---
+
+
+## [DEMO ПРОЕКТА]([https://jjjenya.github.io/1172931-cat-energy-31/]) 
+
+   1.  [главная](https://jjjenya.github.io/1172931-cat-energy-31/index.html) 
+   2.  [каталог](https://jjjenya.github.io/1172931-cat-energy-31/catalog.html) 
+
+
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
 
-_Не удаляйте и не обращайте внимание на файлы и папки:_<br>
-_`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.linthtmlrc`, `.stylelintrc`, `.gulpfile.js`, `svgo.config.js` `package.json`, `package-lock.json`._
 
----
+**Инструкция**
 
-### Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+`npm install` - установка зависимостей
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+`npm start` - сборка проекта в режиме разработки и запуск локального сервера
 
-#### 2. Создайте форк
+`npm test` - запуск теста на наличие стилистических ошибок
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1172931-cat-energy-31) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+`npm run build` - финальная сборка проекта
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
+`npm run deploy` - размещение проекта в GitHub Pages
 
-Получится вот так:
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808135-3a7ace00-a190-11e9-9a8d-7390b3784c65.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии.
-
-#### 4. Начинайте обучение!
 
 ---
+
+
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[check-image]: https://github.com/htmlacademy-adaptive/1172931-cat-energy-31/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/1172931-cat-energy-31/actions
+создан в рамках обучения
+на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)»
+от [HTML Academy](https://htmlacademy.ru),
+наставник [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761)
