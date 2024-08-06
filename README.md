@@ -10,7 +10,7 @@
 
 
 
-верстка: [Евгения Сабирова](https://github.com/jjjenya)
+верстка: [Евгения Егорова (Сабирова)](https://github.com/jjjenya)
 
 
 ---
