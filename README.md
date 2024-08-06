@@ -1,7 +1,7 @@
 # проект «CAT ENERGY» 
 
 
-**интернет-магазин: подбор и заказ питания для котов:**
+**интернет-магазин: подбор и заказ питания для котов**
 
    * создание разметки по методологии БЭМ
    * CSS на препроцессоре Sass
@@ -18,8 +18,8 @@
 
 ## [DEMO ПРОЕКТА]([https://jjjenya.github.io/1172931-cat-energy-31/]) 
 
-   1.  [главная](https://jjjenya.github.io/1172931-cat-energy-31/index.html) 
-   2.  [каталог](https://jjjenya.github.io/1172931-cat-energy-31/catalog.html) 
+   1.   [главная](https://jjjenya.github.io/1172931-cat-energy-31/index.html) 
+   2.   [каталог](https://jjjenya.github.io/1172931-cat-energy-31/catalog.html) 
 
 
 
